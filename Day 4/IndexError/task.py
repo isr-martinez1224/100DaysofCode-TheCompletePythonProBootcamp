@@ -6,4 +6,14 @@ states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Conne
                      "North Dakota", "South Dakota", "Montana", "Washington", "Idaho", "Wyoming", "Utah", "Oklahoma",
                      "New Mexico", "Arizona", "Alaska", "Hawaii"]
 
-print(states_of_america)
+#print(states_of_america)
+
+#print(states_of_america[52])
+# out of range error
+
+
+fruits = ["Cherry", "Apple", "Pear"]
+veg = ["Cucumber", "Kale", "Spinach"]
+fruits_and_veg = [fruits, veg]
+
+print(fruits_and_veg)
