@@ -1,15 +1,18 @@
 import os
 import requests
 from twilio.rest import Client
+from dotenv import load_dotenv
+
+load_dotenv("../../variables.env")
 
 endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 #when making this an environment variable, you copy what is inside
-api_key = os.getenv("API_KEY")
+api_key = os.getenv("WEATHER_API_KEY")
 
 # account_sid = os.environ["TWILIO_ACCOUNT_SID"]
 # auth_token = os.environ["TWILIO_AUTH_TOKEN"]
-account_sid = os.getenv("ACCOUNT_SID")
-auth_token = os.getenv("AUTH_TOKEN")
+account_sid = os.getenv("TWILIO_ACCOUNT_SID")
+auth_token = os.getenv("TWILIO_AUTH_TOKEN")
 
 latitude = os.getenv("LATITUDE")
 longitude = os.getenv("LONGITUDE")
